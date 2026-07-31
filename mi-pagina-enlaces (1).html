@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mis Enlaces</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    background-color: #0a0a0a;
+  }
+
+  body {
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Avatar */
+  .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #2a2a2a;
+    border: 2px solid #3a3a3a;
+    margin-bottom: 18px;
+    background-size: cover;
+    background-position: center;
+    /* Reemplaza el background-color por:
+       background-image: url('TU_FOTO_AQUI.jpg');
+       para poner tu foto de perfil */
+  }
+
+  /* Nombre de usuario */
+  .username {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: 0.2px;
+  }
+
+  /* Biografía */
+  .bio {
+    color: #aaaaaa;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    max-width: 340px;
+  }
+
+  /* Contenedor de botones */
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .link-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 18px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease, background-color 0.2s ease;
+    cursor: pointer;
+  }
+
+  /* Botón 1: Fanvue - contenido exclusivo */
+  .btn-primary {
+    background-color: #00e676;
+    color: #000000;
+    box-shadow: 0 0 0 rgba(0, 230, 118, 0);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 24px rgba(0, 230, 118, 0.35);
+    filter: brightness(1.05);
+  }
+
+  .btn-primary:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Botón 2: Telegram - canal gratis */
+  .btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1.5px solid #3a3a3a;
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-2px) scale(1.02);
+    background-color: rgba(255, 255, 255, 0.06);
+    border-color: #666666;
+  }
+
+  .btn-secondary:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Footer opcional */
+  .footer {
+    margin-top: 40px;
+    color: #555555;
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Foto de perfil: reemplaza https://imgur.com/uLPYdw8 por el nombre de tu imagen -->
+    <div class="avatar" style="background-image: url('https://imgur.com/uLPYdw8');"></div>
+
+    <!-- Nombre de usuario -->
+    <div class="username">Thalia G</div>
+
+    <!-- Biografía corta -->
+    <p class="bio">Come meet me ✨</p>
+
+    <!-- Botones de enlace -->
+    <div class="links">
+
+      <a href="https://www.fanvue.com/thaliaagbaby/fv-3" target="_blank" rel="noopener noreferrer" class="link-btn btn-primary">
+        Contenido Exclusivo 🌶️
+      </a>
+
+      <a href="https://t.me/+fuB5F7zRbq8xZDk8" target="_blank" rel="noopener noreferrer" class="link-btn btn-secondary">
+        Canal de Telegram Gratis 💬
+      </a>
+
+    </div>
+
+    <div class="footer">© 2026</div>
+
+  </div>
+
+</body>
+</html>
